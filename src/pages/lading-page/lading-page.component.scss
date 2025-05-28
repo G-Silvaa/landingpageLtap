@@ -1,5 +1,10 @@
 .container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+
 
   .top {
     width: 100%;
@@ -33,6 +38,7 @@
       width: 303px;
       height: 144px;
     }
+
     ul {
       display: flex;
       gap: 50px;
@@ -70,16 +76,17 @@
   .container-one {
     background: linear-gradient(180deg, #ffffff 0%, #93ac5a 38%, #426b53 100%);
     width: 100%;
-    height: 200vh;
+    height: auto;
 
-    .foto{
-        width: 100%;
-        height: auto;
-        margin-top: 149px;
+    .foto {
+      width: 100%;
+      height: auto;
+      margin-top: 149px;
     }
-    .onda{
-        width: 100%;
-    
+
+    .onda {
+      width: 100%;
+
     }
 
     .containertext {
@@ -88,17 +95,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-     
+
 
       padding: 0 80px;
       padding-top: 250px;
-    
+
       .text {
         width: auto;
         height: 259.88px;
 
         h1 {
-          font-family: Anisette, ;
+          font-family: 'Bebas Neue', sans-serif;
           font-weight: 400;
           font-size: 79px;
           line-height: 104px;
@@ -108,6 +115,7 @@
           color: #15b251;
         }
       }
+
       h1 {
         width: 623px;
         height: 146.76px;
@@ -120,5 +128,468 @@
         color: #535353;
       }
     }
+
+    .project {
+      display: flex;
+      padding: 0 80px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 150px;
+
+      .pr {
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 45px;
+        letter-spacing: 1.25px;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #EEDA66;
+
+      }
+
+      .text-project {
+        width: 100%;
+        max-width: 947px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        h1 {
+          font-family: Roboto Slab;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 45px;
+          letter-spacing: 1.25px;
+          text-align: justify;
+          vertical-align: middle;
+          color: #EEDA66;
+        }
+
+
+      }
+    }
   }
+
+  .container-two {
+    width: 100%;
+    height: 450px;
+    background-color: #94CBC8;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+
+
+
+    .square-content {
+      width: 100%;
+      background-color: #E7914B;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circle {
+        position: absolute;
+        top: -220px;
+        width: 100%;
+        height: 100%;
+        background-color: #2E77FF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+          font-family: 'Bebas Neue', sans-serif;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 45px;
+          letter-spacing: 1.25px;
+          text-align: center;
+          vertical-align: middle;
+          text-transform: uppercase;
+          color: #CAFFA9;
+        }
+      }
+
+      span {
+        width: 100%;
+        max-width: 360px;
+        position: absolute;
+        bottom: 0;
+        font-family: Roboto Slab;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 1.25px;
+        text-align: right;
+        vertical-align: middle;
+        color: #446C53;
+
+
+      }
+
+    }
+
+    .square-content-two {
+      background-color: #D9D9D9;
+      width: 100%;
+
+
+      .circle {
+        width: 100%;
+        height: 100%;
+        background-color: #426B53;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+
+          font-family: 'Bebas Neue', sans-serif;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 45px;
+          letter-spacing: 1.25px;
+          text-align: center;
+          vertical-align: middle;
+          text-transform: uppercase;
+          color: #CAFFA9;
+
+        }
+
+      }
+    }
+
+  }
+
+  .container-three {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 150px;
+    margin: 100px 0;
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 400;
+      font-size: 54px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+      color: #426B53;
+
+
+    }
+
+  }
+
+  .container-four {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+    margin-top: 40px;
+
+
+    .text {
+      width: 100%;
+      max-width: 360px;
+      height: 168px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+        vertical-align: middle;
+        color: #426B53;
+      }
+
+      .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+          font-family: Roboto Slab;
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 36px;
+          letter-spacing: 1.25px;
+          text-align: justify;
+          vertical-align: middle;
+          text-transform: uppercase;
+
+        }
+
+        span {
+          font-family: Roboto Slab;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 36px;
+          letter-spacing: 1.25px;
+          text-align: justify;
+          vertical-align: middle;
+
+        }
+      }
+    }
+
+    .card {
+      width: 788px;
+      height: 474px;
+      background-image: url(../../../public/diva2.svg);
+      background-repeat: no-repeat;
+
+      .content {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EFC209;
+
+        h1 {
+          font-family: Roboto Slab;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 36px;
+          letter-spacing: 1.25px;
+          text-align: justify;
+          vertical-align: middle;
+          text-transform: uppercase;
+          color: #426B53;
+
+        }
+      }
+
+    }
+  }
+
+  .container-six {
+    padding: 0px 150px;
+    margin-top: 100px;
+
+    .text5 {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 40px;
+
+      h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 45px;
+        letter-spacing: 1.25px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #426B53;
+
+      }
+
+      h2 {
+        font-family: Roboto Slab;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0.25px;
+        color: #426B53;
+
+      }
+    }
+  }
+
+  .container-seven {
+    padding: 0px 150px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .container-text {
+      max-width: 516px;
+      width: 100%;
+      height: 300px;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+          font-family: Roboto Slab;
+          font-weight: 500;
+          font-size: 46px;
+          line-height: 100%;
+          letter-spacing: 0.15px;
+          color: #132937;
+
+        }
+
+        h2 {
+          font-family: Roboto Slab;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 100%;
+          letter-spacing: 0px;
+
+        }
+      }
+
+      h2 {
+        margin-top: 20px;
+        font-family: Roboto Condensed;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0.5px;
+        color: #000000;
+
+      }
+    }
+  }
+
+  .container-eight {
+    margin-top: 100px;
+  }
+
+  .container-nine {
+    width: 100%;
+    
+    display: flex;
+    padding: 0px 150px;
+   justify-content: center;
+   margin-top: 100px;
+   gap: 120px;
+
+
+
+    .content {
+      max-width: 846px;
+      width: 100%;
+      height: 864px;
+
+      .pencil {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+
+        .edit {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          span {
+            font-family: Mitr;
+            font-weight: 275;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0%;
+
+          }
+
+        }
+
+        .date {
+          font-family: Mitr;
+          font-weight: 275;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0%;
+        }
+      }
+
+      h1 {
+        font-family: Roboto Slab;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0.25px;
+
+      }
+    }
+
+    .minor-card {
+      max-width: 469px;
+      width: 100%;
+      height: 206px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+
+      .photo {
+        width: 170.55px;
+        height: 165.6px;
+
+      }
+
+      .content-minor-card {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            padding: 20px 0px;
+
+        h4 {
+          font-family: Roboto Slab;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0.15px;
+          vertical-align: middle;
+
+        }
+
+        span {
+          font-family: Mitr;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 100%;
+          letter-spacing: 0.25px;
+
+        }
+
+        .date {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          span {
+            font-family: Mitr;
+            font-weight: 275;
+            font-size: 10px;
+            line-height: 100%;
+            letter-spacing: 0.4px;
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+app-acordion {
+  display: block;
+  width: 1162px;
+  margin-left: 100px;
 }
