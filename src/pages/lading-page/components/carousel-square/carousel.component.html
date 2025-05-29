@@ -1,8 +1,6 @@
 <div class="carousel-container">
-  <!-- Botão para a esquerda -->
-  <button class="arrow left" (click)="scrollCarousel(-1)">&#x2039;</button>
 
-  <!-- Itens do carousel -->
+  <button class="arrow left" (click)="scrollCarousel(-1)">&#x2039;</button>
   <div
     class="carousel"
     #carousel
@@ -17,6 +15,5 @@
     <div class="item" *ngFor="let item of items; let i = index"></div>
   </div>
 
-  <!-- Botão para a direita -->
   <button class="arrow right" (click)="scrollCarousel(1)">&#x203A;</button>
 </div>

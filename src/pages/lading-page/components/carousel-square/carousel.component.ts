@@ -66,7 +66,7 @@ export class CarouselSquareComponent implements AfterViewInit {
     if (!this.isDragging) return;
     event.preventDefault();
     const x = this.getEventX(event) - this.carousel.nativeElement.offsetLeft;
-    const walk = (x - this.startX) * 1; // Multiplicador para ajustar a sensibilidade
+    const walk = (x - this.startX) * 1;
     this.carousel.nativeElement.scrollLeft = this.scrollLeft - walk;
   }
 
