@@ -1,5 +1,4 @@
 .card-form {
-
   width: 839px;
   height: auto;
   background-color: #547955;
@@ -9,11 +8,13 @@
   padding: 50px;
 
 
+
   .input-group {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
 
   }
 
@@ -62,3 +63,14 @@
   }
 
 }
+
+
+@media (max-width: 500px) {
+  .card-form{
+    padding: 20px !important;
+   
+  }
+
+}
+
+
