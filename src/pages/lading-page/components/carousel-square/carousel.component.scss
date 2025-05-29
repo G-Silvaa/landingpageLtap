@@ -1,3 +1,4 @@
+/* filepath: /home/geniltonsilva/landingpageLtap/src/pages/lading-page/components/carousel-square/carousel.component.scss */
 :host {
   display: block;
   width: 100%;
@@ -12,11 +13,16 @@
 
 .carousel {
   display: flex;
-  gap: 30px;
+  gap: 30px; /* Espaço entre os itens */
   overflow-x: hidden; /* Oculta o overflow horizontal */
   scroll-behavior: smooth;
   padding: 20px 80px;
   box-sizing: border-box;
+  cursor: grab;
+
+  &.dragging {
+    cursor: grabbing;
+  }
 }
 
 .item {
@@ -48,4 +54,20 @@
 
 .arrow.left {
   left: 0;
+}
+
+@media (max-width: 1280px) {
+  .carousel {
+    padding: 20px 40px;
+  }
+
+  .item {
+    width: 100%;
+    height: 200px;
+  }
+
+  .arrow {
+    width: 60px;
+    font-size: 30px;
+  }
 }
