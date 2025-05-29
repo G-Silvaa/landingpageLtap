@@ -332,9 +332,10 @@
 
     .card {
       width: 788px;
-      height: 474px;
+      height: 403px;
       background-image: url(../../../public/diva2.svg);
       background-repeat: no-repeat;
+      margin-bottom: 40px;
 
       .content {
         width: 100%;
@@ -690,6 +691,9 @@
   }
 
   @media (max-width: 990px) {
+    .card{
+      margin-bottom: 0px !important;
+    }
     nav {
       padding: 0 10px;
     }

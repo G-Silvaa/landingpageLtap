@@ -10,22 +10,25 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 export class CarouselContentComponent implements AfterViewInit {
   @ViewChild('carousel') carousel!: ElementRef<HTMLDivElement>;
 
-  items = Array(5).fill(0); // Array de itens
-  itemWidth: number = 0; // Largura de cada item (incluindo o gap)
+  items = [
+    '/diva2.svg',
+    '/divos2.png',
+    '/diva2.svg',
+    '/divos2.png',
+    '/diva2.svg'
+  ];
+  itemWidth: number = 0; 
   isDragging = false;
   startX = 0;
   scrollLeft = 0;
 
   ngAfterViewInit() {
-    // Calcula a largura de cada item após o carregamento do componente
     const firstItem = this.carousel.nativeElement.querySelector('.item') as HTMLElement;
     if (firstItem) {
       const style = window.getComputedStyle(firstItem);
       const marginRight = parseFloat(style.marginRight || '0');
-      this.itemWidth = firstItem.offsetWidth + marginRight; // Inclui o gap entre os itens
+      this.itemWidth = firstItem.offsetWidth + marginRight; 
     }
-
-    // Centraliza os itens no início
     this.centerItems();
   }
 
@@ -55,7 +58,6 @@ export class CarouselContentComponent implements AfterViewInit {
     }
   }
 
-  // Lógica para arrastar com o mouse ou toque
   onDragStart(event: MouseEvent | TouchEvent) {
     this.isDragging = true;
     this.startX = this.getEventX(event) - this.carousel.nativeElement.offsetLeft;
@@ -66,7 +68,7 @@ export class CarouselContentComponent implements AfterViewInit {
     if (!this.isDragging) return;
     event.preventDefault();
     const x = this.getEventX(event) - this.carousel.nativeElement.offsetLeft;
-    const walk = (x - this.startX) * 1; // Multiplicador para ajustar a sensibilidade
+    const walk = (x - this.startX) * 1;
     this.carousel.nativeElement.scrollLeft = this.scrollLeft - walk;
   }
 

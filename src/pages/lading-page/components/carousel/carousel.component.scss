@@ -28,9 +28,20 @@
 .item {
   width: 314.5px;
   height: 314.5px;
-  border-radius: 50%;
+  border-radius: 50%; 
   background-color: #9db2a8;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; 
 }
 
 .arrow {

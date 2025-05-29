@@ -14,7 +14,9 @@
     (touchmove)="onDragMove($event)"
     (touchend)="onDragEnd()"
   >
-    <div class="item" *ngFor="let item of items"></div>
+    <div class="item" *ngFor="let item of items">
+      <img [src]="item" alt="Carousel item" />
+    </div>
   </div>
 
   <!-- Botão para a direita -->

@@ -10,22 +10,32 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 export class CarouselSquareComponent implements AfterViewInit {
   @ViewChild('carousel') carousel!: ElementRef<HTMLDivElement>;
 
-  items = Array(10).fill(0); // Array de itens do carousel
-  itemWidth: number = 0; // Largura de cada item (incluindo o gap)
+  items = [
+    '/diva2.svg',
+    '/fotoca.png',
+    '/diva2.svg',
+    '/fotoca.png',
+    '/diva2.svg',
+    '/fotoca.png',
+    '/diva2.svg',
+    '/fotoca.png',
+    '/diva2.svg',
+    '/fotoca.png'
+  ];
+  itemWidth: number = 0; 
   isDragging = false;
   startX = 0;
   scrollLeft = 0;
 
   ngAfterViewInit() {
-    // Calcula a largura de cada item após o carregamento do componente
+   
     const firstItem = this.carousel.nativeElement.querySelector('.item') as HTMLElement;
     if (firstItem) {
       const style = window.getComputedStyle(firstItem);
       const marginRight = parseFloat(style.marginRight || '0');
-      this.itemWidth = firstItem.offsetWidth + marginRight; // Inclui o gap entre os itens
+      this.itemWidth = firstItem.offsetWidth + marginRight; 
     }
 
-    // Centraliza os itens no início
     this.centerItems();
   }
 
@@ -55,7 +65,6 @@ export class CarouselSquareComponent implements AfterViewInit {
     }
   }
 
-  // Lógica para arrastar com o mouse ou toque
   onDragStart(event: MouseEvent | TouchEvent) {
     this.isDragging = true;
     this.startX = this.getEventX(event) - this.carousel.nativeElement.offsetLeft;

@@ -12,7 +12,9 @@
     (touchmove)="onDragMove($event)"
     (touchend)="onDragEnd()"
   >
-    <div class="item" *ngFor="let item of items; let i = index"></div>
+    <div class="item" *ngFor="let item of items; let i = index">
+      <img [src]="item" alt="Carousel item {{ i + 1 }}" />
+    </div>
   </div>
 
   <button class="arrow right" (click)="scrollCarousel(1)">&#x203A;</button>
