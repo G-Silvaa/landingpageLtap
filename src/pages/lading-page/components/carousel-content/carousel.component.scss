@@ -50,4 +50,23 @@
   .arrow.left {
     left: 0;
   }
+
+@media(max-width: 1280px) {
+    .carousel {
+      padding: 20px 40px;
+    }
+  
+    .item {
+      width: 100%;
+      height: 527px;
+    }
+  
+    .arrow {
+      width: 60px;
+      font-size: 30px;
+    }
+  }
+
+
+ 
   
