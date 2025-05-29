@@ -5,10 +5,11 @@ import { AcordionComponent } from "./components/acordion/acordion.component";
 import { FormComponent } from "./components/form/form.component";
 import { CarouselContentComponent } from './components/carousel-content/carousel.component';
 import { CarouselSquareComponent } from "./components/carousel-square/carousel.component";
+import { DropdownComponent } from "./components/dropdown/dropdown.component";
 
 @Component({
   selector: 'app-lading-page',
-  imports: [CarouselComponent, AcordionComponent, FormComponent, CarouselContentComponent, CarouselSquareComponent],
+  imports: [CarouselComponent, AcordionComponent, FormComponent, CarouselContentComponent, CarouselSquareComponent, DropdownComponent],
   templateUrl: './lading-page.component.html',
   styleUrl: './lading-page.component.scss'
 })

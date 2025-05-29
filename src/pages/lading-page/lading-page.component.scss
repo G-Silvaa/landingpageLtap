@@ -14,6 +14,11 @@
     justify-content: end;
     background-color: #213820;
     padding: 0 20px;
+    
+
+    app-dropdown{
+      display: none;
+    }
 
     .itens {
       .square {
@@ -682,6 +687,14 @@
   @media (max-width: 990px) {
     nav{
       padding: 0 10px;
+    }
+    .top{
+      justify-content: space-between;
+    
+
+    }
+    app-dropdown{
+      display: inherit !important;
     }
     .container-one {
       padding: 0 !important;
