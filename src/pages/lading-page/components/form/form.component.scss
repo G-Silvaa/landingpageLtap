@@ -52,23 +52,47 @@
     letter-spacing: 0.1px;
     text-align: center;
     color: #CCC82E;
+    cursor: pointer;
 
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1680px) {
   .card-form{
-    width: 100% !important;
+    width: auto;
+    height: auto;
    
   }
 
+}
+
+@media(max-width: 1000px) {
+  .card-form{
+    margin-top: 50px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 50px !important;
+  }
+
+  button {
+    width: 100% !important;
+  }
 }
 
 
 @media (max-width: 500px) {
   .card-form{
     padding: 20px !important;
-   
+    margin-top: 0px;
+    
+    .check{
+      label {
+        font-size: 14px !important;
+      }
+    }
   }
 
 }
