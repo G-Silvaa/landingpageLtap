@@ -13,6 +13,7 @@ import { CarouselSquareComponent } from "./components/carousel-square/carousel.c
   styleUrl: './lading-page.component.scss'
 })
 export class LadingPageComponent {
+  menuAberto = false;
 
   cards = [
     {
@@ -37,5 +38,9 @@ export class LadingPageComponent {
       tempoLeitura: '2min de leitura'
     }
   ];
+
+  toggleMenu() {
+    this.menuAberto = !this.menuAberto;
+  }
   
 }

@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-acordion',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './acordion.component.html',
   styleUrl: './acordion.component.scss'
 })
 export class AcordionComponent {
-
   items = [
     {
       title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
@@ -29,6 +29,8 @@ export class AcordionComponent {
   ];
 
   activeIndex: number | null = 0;
+
+  @ViewChildren('content') contentElements!: QueryList<ElementRef>;
 
   toggle(index: number) {
     this.activeIndex = this.activeIndex === index ? null : index;

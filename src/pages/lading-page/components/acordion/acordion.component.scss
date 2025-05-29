@@ -1,6 +1,5 @@
 .accordion-item {
-  border-bottom: 1px solid #cbd5e1;
-  /* border-gray-300 */
+  border-bottom: 1px solid #cbd5e1; // border-gray-300
   padding: 1rem 0;
 }
 
@@ -12,8 +11,7 @@
   text-align: left;
   font-weight: 600;
   font-size: 1.125rem;
-  color: #1e293b;
-  /* slate-800 */
+  color: #1e293b; // slate-800
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,31 +19,38 @@
 }
 
 .accordion-content {
-  margin-top: 0.5rem;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.accordion-inner {
+  padding-top: 0.5rem;
   font-size: 0.875rem;
-  color: #64748b;
-  /* slate-500 */
+  color: #64748b; // slate-500
 }
 
 .icon {
-  font-size: 1.25rem;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
 }
 
+.icon.rotated {
+  transform: rotate(180deg);
+}
 
 .text {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 25px;
   line-height: 100%;
   letter-spacing: 0.15px;
-
 }
 
 .text2 {
-  font-family: Roboto Flex;
+  font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 0.25px;
-
 }
