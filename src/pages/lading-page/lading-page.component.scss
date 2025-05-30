@@ -68,25 +68,24 @@
       color: #fff;
       border: none;
       border-radius: 5px;
-      
+
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: Roboto Slab;
-font-weight: 900;
-font-size: 18px;
-line-height: 16px;
-letter-spacing: 1.25px;
-text-align: center;
-vertical-align: middle;
-
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 16px;
+      letter-spacing: 1.25px;
+      text-align: center;
+      vertical-align: middle;
 
       &:hover {
         background-color: #1a2b1c;
       }
 
-      img{
+      img {
         width: 20px;
         height: 20px;
         margin-right: 10px;
@@ -456,20 +455,19 @@ vertical-align: middle;
   }
 
   .container-eight {
-    
-      h1 {
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 45px;
-        letter-spacing: 1.25px;
-        vertical-align: middle;
-        text-transform: uppercase;
-        color: #426b53;
-        padding: 0px 150px;
-        margin-bottom: 60px;
-      }
-    
+    h1 {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 45px;
+      letter-spacing: 1.25px;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: #426b53;
+      padding: 0px 150px;
+      margin-bottom: 60px;
+    }
+
     margin-top: 100px;
   }
 
@@ -598,8 +596,8 @@ vertical-align: middle;
   }
 
   @media (max-width: 1600px) and (min-width: 1282px) {
-    .container-eight{
-      h1{
+    .container-eight {
+      h1 {
         padding: 0px 80px !important;
       }
     }
@@ -633,14 +631,14 @@ vertical-align: middle;
         width: 336px !important;
       }
     }
-    .container-seven{
+    .container-seven {
       padding: 0px 80px;
     }
   }
 
   @media (max-width: 1280px) {
-    .container-eight{
-      h1{
+    .container-eight {
+      h1 {
         padding: 0px 80px !important;
       }
     }
@@ -695,8 +693,6 @@ vertical-align: middle;
       padding: 0px 80px;
     }
 
-    
-
     .container-nine {
       .content {
         .photo {
@@ -734,12 +730,12 @@ vertical-align: middle;
   }
 
   @media (max-width: 990px) {
-    .container-eight{
-      h1{
+    .container-eight {
+      h1 {
         padding: 0px 0px !important;
       }
     }
-    .card{
+    .card {
       margin-bottom: 0px !important;
     }
     nav {
@@ -800,7 +796,7 @@ vertical-align: middle;
     .container-four {
       flex-direction: column !important;
       display: flex;
-     
+
       padding: 0px;
 
       .card {
@@ -872,6 +868,9 @@ vertical-align: middle;
   @media (max-width: 500px) {
     nav {
       padding: 0px 10px;
+      button{
+        font-size: 14px;
+      }
       img {
         width: 190px;
         height: 80px;
@@ -880,6 +879,10 @@ vertical-align: middle;
       button {
         width: 94px;
         height: 41px;
+
+        img{
+          margin-right: 3px;
+        }
       }
     }
     .container-seven {
@@ -887,7 +890,7 @@ vertical-align: middle;
         margin-bottom: 113px !important;
       }
     }
-   
+
     .container-one {
       .containertext {
         gap: 20px !important;
@@ -949,12 +952,8 @@ vertical-align: middle;
   }
 
   @media (max-width: 400px) {
- 
-   .sub{
-    margin-top: 46px !important;
-   }
+    .sub {
+      margin-top: 46px !important;
+    }
   }
-
 }
-
-
