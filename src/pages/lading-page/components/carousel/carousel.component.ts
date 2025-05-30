@@ -28,6 +28,7 @@ export class CarouselComponent implements AfterViewInit {
   scrollLeft = 0;
 
   ngAfterViewInit() {
+   
     const firstItem = this.carousel.nativeElement.querySelector('.item') as HTMLElement;
     if (firstItem) {
       const style = window.getComputedStyle(firstItem);
@@ -55,17 +56,12 @@ export class CarouselComponent implements AfterViewInit {
       const carouselWidth = this.carousel.nativeElement.offsetWidth;
       const totalItemsWidth = this.items.length * this.itemWidth;
       const emptySpace = carouselWidth - totalItemsWidth;
-  
+
       if (emptySpace > 0) {
         this.carousel.nativeElement.style.justifyContent = 'center';
       } else {
         this.carousel.nativeElement.style.justifyContent = 'flex-start';
       }
-      const middleIndex = Math.floor(this.items.length / 2);
-      const middleItemOffset = middleIndex * this.itemWidth;
-      const scrollOffset = middleItemOffset - (carouselWidth / 2) + (this.itemWidth / 2);
-  
-      this.carousel.nativeElement.scrollLeft = scrollOffset > 0 ? scrollOffset : 0;
     }
   }
 
@@ -79,7 +75,7 @@ export class CarouselComponent implements AfterViewInit {
     if (!this.isDragging) return;
     event.preventDefault();
     const x = this.getEventX(event) - this.carousel.nativeElement.offsetLeft;
-    const walk = (x - this.startX) * 1; 
+    const walk = (x - this.startX) * 1;
     this.carousel.nativeElement.scrollLeft = this.scrollLeft - walk;
   }
 
