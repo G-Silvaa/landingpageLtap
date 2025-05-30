@@ -55,12 +55,19 @@ export class CarouselComponent implements AfterViewInit {
       const carouselWidth = this.carousel.nativeElement.offsetWidth;
       const totalItemsWidth = this.items.length * this.itemWidth;
       const emptySpace = carouselWidth - totalItemsWidth;
-
+  
       if (emptySpace > 0) {
         this.carousel.nativeElement.style.justifyContent = 'center';
       } else {
         this.carousel.nativeElement.style.justifyContent = 'flex-start';
       }
+  
+      // Centralizar o carrossel no item do meio
+      const middleIndex = Math.floor(this.items.length / 2);
+      const middleItemOffset = middleIndex * this.itemWidth;
+      const scrollOffset = middleItemOffset - (carouselWidth / 2) + (this.itemWidth / 2);
+  
+      this.carousel.nativeElement.scrollLeft = scrollOffset > 0 ? scrollOffset : 0;
     }
   }
 
