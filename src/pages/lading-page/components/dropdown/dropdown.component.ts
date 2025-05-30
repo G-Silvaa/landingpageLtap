@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent {
-  isModalOpen = false;
+  isMenuOpen = false;
 
-  toggleModal() {
-    this.isModalOpen = !this.isModalOpen;
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

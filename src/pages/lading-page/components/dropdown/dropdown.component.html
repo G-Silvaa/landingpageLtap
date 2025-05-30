@@ -1,22 +1,12 @@
 <div class="dropdown">
-    <button
-      class="btn btn-secondary"
-      type="button"
-      (click)="toggleModal()"
-    >
-      Menu
-    </button>
+  <img src="/menu.svg" alt="Menu" (click)="toggleMenu()">
+
+  <div class="menu" *ngIf="isMenuOpen">
+    <ul>
+      <li><a href="#project" (click)="toggleMenu()">O Projeto</a></li>
+      <li><a href="#contentC" (click)="toggleMenu()">Conteúdo</a></li>
+      <li><a href="#help" (click)="toggleMenu()">Ajuda</a></li>
+      <li><a href="#red" (click)="toggleMenu()">#RedeJED</a></li>
+    </ul>
   </div>
-  
-  <div class="modal-backdrop" *ngIf="isModalOpen" (click)="toggleModal()"></div>
-  <div class="modal" *ngIf="isModalOpen">
-    <div class="modal-content">
-      <button class="close-btn" (click)="toggleModal()">X</button>
-      <ul>
-        <li><a href="#">O Projeto</a></li>
-        <li><a href="#">Conteúdo</a></li>
-        <li><a href="#">Ajuda</a></li>
-        <li><a href="#">#RedeJED</a></li>
-      </ul>
-    </div>
-  </div>
+</div>
