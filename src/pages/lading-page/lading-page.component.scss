@@ -439,6 +439,19 @@
   }
 
   .container-eight {
+    
+      h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 45px;
+        letter-spacing: 1.25px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #426b53;
+        padding: 0px 150px;
+      }
+    
     margin-top: 100px;
   }
 
@@ -567,6 +580,11 @@
   }
 
   @media (max-width: 1600px) and (min-width: 1282px) {
+    .container-eight{
+      h1{
+        padding: 0px 80px !important;
+      }
+    }
     .project {
       .text-project {
         max-width: 545px !important;
@@ -603,6 +621,11 @@
   }
 
   @media (max-width: 1280px) {
+    .container-eight{
+      h1{
+        padding: 0px 80px !important;
+      }
+    }
     .container-one {
       transition: all 0.3s ease-in-out;
       .project {
@@ -654,6 +677,8 @@
       padding: 0px 80px;
     }
 
+    
+
     .container-nine {
       .content {
         .photo {
@@ -691,6 +716,11 @@
   }
 
   @media (max-width: 990px) {
+    .container-eight{
+      h1{
+        padding: 0px 0px !important;
+      }
+    }
     .card{
       margin-bottom: 0px !important;
     }
