@@ -33,10 +33,11 @@
   width: 24px;
   height: 24px;
   transition: transform 0.3s ease;
+  transform: rotate(180deg);
 }
 
 .icon.rotated {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .text {

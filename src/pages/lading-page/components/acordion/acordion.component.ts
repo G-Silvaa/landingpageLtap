@@ -6,7 +6,7 @@ import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './acordion.component.html',
-  styleUrl: './acordion.component.scss'
+  styleUrls: ['./acordion.component.scss']
 })
 export class AcordionComponent {
   items = [
@@ -28,9 +28,17 @@ export class AcordionComponent {
     }
   ];
 
-  activeIndex: number | null = 0;
+  activeIndex: number | null = null;
+  heights: number[] = [];
 
   @ViewChildren('content') contentElements!: QueryList<ElementRef>;
+
+  ngAfterViewInit() {
+    // Calcula as alturas de cada conteúdo após a renderização
+    this.heights = this.contentElements.map(
+      (content) => content.nativeElement.scrollHeight
+    );
+  }
 
   toggle(index: number) {
     this.activeIndex = this.activeIndex === index ? null : index;
