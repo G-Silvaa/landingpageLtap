@@ -61,8 +61,6 @@ export class CarouselComponent implements AfterViewInit {
       } else {
         this.carousel.nativeElement.style.justifyContent = 'flex-start';
       }
-  
-      // Centralizar o carrossel no item do meio
       const middleIndex = Math.floor(this.items.length / 2);
       const middleItemOffset = middleIndex * this.itemWidth;
       const scrollOffset = middleItemOffset - (carouselWidth / 2) + (this.itemWidth / 2);
